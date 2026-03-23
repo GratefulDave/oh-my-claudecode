@@ -462,6 +462,7 @@ describe('auto-update reconciliation', () => {
             timeout: 60000,
             shell: true,
             windowsHide: true,
+            shell: true,
             env: expect.objectContaining({ OMC_UPDATE_RECONCILE: '1' }),
         }));
         expect(mockedWriteFileSync).toHaveBeenCalledWith(expect.stringContaining('.omc-version.json'), expect.stringContaining('"version": "4.1.6"'));
