@@ -1779,12 +1779,12 @@ World`);
         expect(getPrimaryKeyword('오토파일럿')?.type).toBe('autopilot');
       });
 
-      it('hasKeyword("울트라워크", "ultrawork") should be true', () => {
-        expect(hasKeyword('울트라워크', 'ultrawork')).toBe(true);
+      it('hasKeyword("울트라워크") should be true', () => {
+        expect(hasKeyword('울트라워크')).toBe(true);
       });
 
-      it('hasKeyword("오토파일럿", "autopilot") should be true', () => {
-        expect(hasKeyword('오토파일럿', 'autopilot')).toBe(true);
+      it('hasKeyword("오토파일럿") should be true', () => {
+        expect(hasKeyword('오토파일럿')).toBe(true);
       });
     });
   });
